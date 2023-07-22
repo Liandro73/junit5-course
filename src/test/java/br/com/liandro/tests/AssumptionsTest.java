@@ -8,7 +8,7 @@ public class AssumptionsTest {
 
     @ParameterizedTest(name = "Test Case 002 - Parameterized Test : {index} - value: {arguments}")
     @ValueSource(strings = {"Dernival", "Alícia", "Elainy"})
-    public void TC002(String theParam) {
+    public void TC001(String theParam) {
         Assumptions.assumeTrue(!"Dernival".equals(theParam));
         System.out.println(theParam);
     }
